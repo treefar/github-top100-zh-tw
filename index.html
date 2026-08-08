@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="每日更新的 GitHub 累積 Stars 前 100 名儲存庫，提供繁體中文重點、直接下載、安裝判讀，以及針對 Unity、AI、研究與教學工作的個人推薦。" />
+  <meta name="theme-color" content="#0b1734" />
+  <title>GitHub 前百大中文精選｜下載、重點與個人推薦</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到主要內容</a>
+
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="篩選導覽">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">GH</div>
+        <div>
+          <p class="brand-kicker">DAILY RADAR</p>
+          <h1>GitHub Top 100</h1>
+          <p>繁中摘要・安裝判讀</p>
+        </div>
+      </div>
+
+      <nav class="filter-nav" aria-label="快速篩選">
+        <button class="nav-button is-active" type="button" data-filter="all">
+          <span>全部排行</span><span class="nav-count" data-count="all">100</span>
+        </button>
+        <button class="nav-button personal-nav" type="button" data-filter="personal">
+          <span><i class="nav-dot personal"></i>老師精選</span><span class="nav-count" data-count="personal">0</span>
+        </button>
+        <button class="nav-button" type="button" data-filter="A">
+          <span><i class="nav-dot grade-a"></i>A｜立即採用</span><span class="nav-count" data-count="A">0</span>
+        </button>
+        <button class="nav-button" type="button" data-filter="B">
+          <span><i class="nav-dot grade-b"></i>B｜專案按需</span><span class="nav-count" data-count="B">0</span>
+        </button>
+        <button class="nav-button" type="button" data-filter="C">
+          <span><i class="nav-dot grade-c"></i>C｜收藏暫緩</span><span class="nav-count" data-count="C">0</span>
+        </button>
+        <button class="nav-button" type="button" data-filter="D">
+          <span><i class="nav-dot grade-d"></i>D｜不建議</span><span class="nav-count" data-count="D">0</span>
+        </button>
+        <div class="nav-separator"></div>
+        <button class="nav-button" type="button" data-filter="installable">
+          <span>可安裝工具</span><span class="nav-count" data-count="installable">0</span>
+        </button>
+        <button class="nav-button" type="button" data-filter="ai">
+          <span>AI／Agent</span><span class="nav-count" data-count="ai">0</span>
+        </button>
+        <button class="nav-button" type="button" data-filter="learning">
+          <span>教材／清單</span><span class="nav-count" data-count="learning">0</span>
+        </button>
+        <button class="nav-button" type="button" data-filter="research">
+          <span>研究／教學適用</span><span class="nav-count" data-count="research">0</span>
+        </button>
+        <button class="nav-button" type="button" data-filter="favorites">
+          <span>我的收藏</span><span class="nav-count" data-count="favorites">0</span>
+        </button>
+      </nav>
+
+      <section class="sidebar-note" aria-labelledby="rating-guide-title">
+        <h2 id="rating-guide-title">分級怎麼看</h2>
+        <p><strong>A</strong> 可直接採用或保留；<strong>B</strong> 有專案再裝；<strong>C</strong> 收藏、閱讀或暫緩；<strong>D</strong> 不建議。</p>
+        <p><strong>老師精選</strong>代表對 Unity、AI 工作流、研究、教學或系務有立即效益。</p>
+        <p>Stars 反映關注度，不等於安全、品質、授權或適合度。大型專案請先讀重點再下載。</p>
+      </section>
+
+      <div class="sidebar-footer">
+        <span id="sidebar-update">資料載入中</span>
+        <a href="https://github.com" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </div>
+    </aside>
+
+    <main id="main-content" class="main-content">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">GITHUB TOP 100 · 每日 06:17 更新</p>
+          <h2>前百大不只列給你看，還告訴你<strong>重點、用途、怎麼下載</strong>。</h2>
+          <p class="hero-description">每個專案都有繁體中文重點、適用情境、風險提醒與 ZIP 下載。特別符合您的 Unity、AI、博士研究、教學及系務需求者，會另外標成「老師精選」。</p>
+          <div class="status-row">
+            <span class="status-pill"><span class="pulse-dot"></span><span id="data-status">載入資料中</span></span>
+            <span class="status-pill muted" id="snapshot-label">快照日期 —</span>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <button id="show-personal-picks" class="button primary" type="button">先看老師精選</button>
+          <button id="export-favorites" class="button secondary" type="button">下載收藏清單</button>
+          <button id="export-csv" class="button secondary" type="button">匯出 CSV</button>
+        </div>
+      </header>
+
+      <section class="kpi-grid" aria-label="排行摘要">
+        <article class="kpi-card accent-blue">
+          <span class="kpi-label">排行項目</span>
+          <strong id="kpi-total">—</strong>
+          <span>GitHub 高星儲存庫</span>
+        </article>
+        <article class="kpi-card accent-green">
+          <span class="kpi-label">A 級</span>
+          <strong id="kpi-a">—</strong>
+          <span>建議立即採用／保留</span>
+        </article>
+        <article class="kpi-card accent-amber">
+          <span class="kpi-label">B 級</span>
+          <strong id="kpi-b">—</strong>
+          <span>有明確專案再使用</span>
+        </article>
+        <article class="kpi-card accent-purple">
+          <span class="kpi-label">老師精選</span>
+          <strong id="kpi-personal">—</strong>
+          <span>個人適配度 5／5</span>
+        </article>
+      </section>
+
+      <section class="personal-panel" aria-labelledby="personal-title">
+        <div class="personal-heading">
+          <div>
+            <p class="panel-kicker">PERSONAL PICKS</p>
+            <h3 id="personal-title">最符合您目前工作的 GitHub 專案</h3>
+            <p>優先依 Unity 開發、AI 代理、文件整理、研究、教學與 Windows 日常效率判讀。</p>
+          </div>
+          <button id="show-all-personal" class="text-button" type="button">查看全部精選</button>
+        </div>
+        <div id="personal-picks" class="personal-picks" aria-live="polite"></div>
+      </section>
+
+      <section class="insight-grid" aria-label="排行概況">
+        <article class="panel distribution-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="panel-kicker">DECISION MIX</p>
+              <h3>安裝判讀分布</h3>
+            </div>
+            <span id="grade-summary" class="small-note">—</span>
+          </div>
+          <div id="grade-bar" class="grade-bar" aria-label="A B C D 分級比例"></div>
+          <div id="grade-legend" class="grade-legend"></div>
+        </article>
+
+        <article class="panel top-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="panel-kicker">TOP SIGNAL</p>
+              <h3>前五名星數</h3>
+            </div>
+            <span class="small-note">累積 Stars</span>
+          </div>
+          <div id="top-bars" class="top-bars"></div>
+        </article>
+      </section>
+
+      <section class="toolbar" aria-label="搜尋與排序">
+        <label class="search-box">
+          <span class="sr-only">搜尋專案</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.3-4.3m2.3-5.2A7.5 7.5 0 1 1 4 11.5a7.5 7.5 0 0 1 15 0Z" /></svg>
+          <input id="search-input" type="search" placeholder="搜尋 Repository、功能、類別或關鍵字…" autocomplete="off" />
+          <kbd>/</kbd>
+        </label>
+
+        <label class="select-control">
+          <span>類別</span>
+          <select id="category-select">
+            <option value="all">全部類別</option>
+          </select>
+        </label>
+
+        <label class="select-control">
+          <span>排序</span>
+          <select id="sort-select">
+            <option value="rank">目前名次</option>
+            <option value="stars">Stars 由高至低</option>
+            <option value="fit">適配度由高至低</option>
+            <option value="change">名次上升幅度</option>
+            <option value="name">名稱 A–Z</option>
+          </select>
+        </label>
+
+        <div class="view-toggle" role="group" aria-label="檢視方式">
+          <button type="button" class="is-active" data-view="cards" aria-label="卡片檢視">▦</button>
+          <button type="button" data-view="compact" aria-label="精簡檢視">☷</button>
+        </div>
+      </section>
+
+      <section class="results-header">
+        <div>
+          <p class="panel-kicker">RANKING</p>
+          <h3 id="results-title">全部排行</h3>
+        </div>
+        <p id="results-count">載入中</p>
+      </section>
+
+      <section id="repo-list" class="repo-list" aria-live="polite" aria-busy="true">
+        <div class="loading-card"><span></span><span></span><span></span></div>
+        <div class="loading-card"><span></span><span></span><span></span></div>
+        <div class="loading-card"><span></span><span></span><span></span></div>
+      </section>
+
+      <section class="method-panel">
+        <div>
+          <p class="panel-kicker">METHODOLOGY</p>
+          <h3>這不是「最值得安裝」排行榜</h3>
+        </div>
+        <p id="methodology-text">依累積 Stars 排序後，再用工具性質、與現有工作流重疊程度、授權、安全、維護成本及個人需求進行第二層判讀。</p>
+        <div class="method-tags">
+          <span>累積 Stars</span><span>繁中摘要</span><span>個人適配度</span><span>授權提醒</span><span>每日名次變化</span>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <p>資料來自 GitHub REST API。摘要用於快速判讀，正式採用前仍應閱讀原始 README、LICENSE、SECURITY 與 Release。</p>
+        <p><span id="footer-generated">—</span> · <a href="data/top100.json">JSON 資料</a> · <a href="data/history.json">歷史快照</a></p>
+      </footer>
+    </main>
+  </div>
+
+  <template id="repo-card-template"></template>
+  <noscript>此頁面需要 JavaScript 才能載入排行、搜尋與篩選功能。</noscript>
+  <script src="assets/initial-data.js"></script>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>

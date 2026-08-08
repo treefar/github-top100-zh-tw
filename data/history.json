@@ -66,7 +66,7 @@
     },
     {
       "date": "2026-08-08",
-      "generated_at": "2026-08-08T21:53:49+08:00",
+      "generated_at": "2026-08-08T21:59:27+08:00",
       "top10": [
         {
           "rank": 1,
@@ -76,7 +76,7 @@
         {
           "rank": 2,
           "full_name": "sindresorhus/awesome",
-          "stars": 493608
+          "stars": 493609
         },
         {
           "rank": 3,
@@ -86,7 +86,7 @@
         {
           "rank": 4,
           "full_name": "freeCodeCamp/freeCodeCamp",
-          "stars": 453667
+          "stars": 453668
         },
         {
           "rank": 5,
@@ -96,17 +96,17 @@
         {
           "rank": 6,
           "full_name": "openclaw/openclaw",
-          "stars": 385536
+          "stars": 385537
         },
         {
           "rank": 7,
           "full_name": "nilbuild/developer-roadmap",
-          "stars": 363919
+          "stars": 363920
         },
         {
           "rank": 8,
           "full_name": "donnemartin/system-design-primer",
-          "stars": 362366
+          "stars": 362367
         },
         {
           "rank": 9,

@@ -1953,6 +1953,69 @@
         "D": 7
       },
       "new_entries": 0
+    },
+    {
+      "date": "2026-09-07",
+      "generated_at": "2026-09-07T07:57:18+08:00",
+      "top10": [
+        {
+          "rank": 1,
+          "full_name": "codecrafters-io/build-your-own-x",
+          "stars": 545627
+        },
+        {
+          "rank": 2,
+          "full_name": "sindresorhus/awesome",
+          "stars": 503673
+        },
+        {
+          "rank": 3,
+          "full_name": "public-apis/public-apis",
+          "stars": 476480
+        },
+        {
+          "rank": 4,
+          "full_name": "freeCodeCamp/freeCodeCamp",
+          "stars": 455126
+        },
+        {
+          "rank": 5,
+          "full_name": "EbookFoundation/free-programming-books",
+          "stars": 396126
+        },
+        {
+          "rank": 6,
+          "full_name": "openclaw/openclaw",
+          "stars": 389052
+        },
+        {
+          "rank": 7,
+          "full_name": "donnemartin/system-design-primer",
+          "stars": 368376
+        },
+        {
+          "rank": 8,
+          "full_name": "nilbuild/developer-roadmap",
+          "stars": 366436
+        },
+        {
+          "rank": 9,
+          "full_name": "jwasham/coding-interview-university",
+          "stars": 360462
+        },
+        {
+          "rank": 10,
+          "full_name": "vinta/awesome-python",
+          "stars": 318873
+        }
+      ],
+      "grade_counts": {
+        "C": 55,
+        "A": 10,
+        "B": 28,
+        "D": 7
+      },
+      "new_entries": 0
     }
   ]
 }

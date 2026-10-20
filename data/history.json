@@ -4662,6 +4662,69 @@
         "D": 7
       },
       "new_entries": 0
+    },
+    {
+      "date": "2026-10-20",
+      "generated_at": "2026-10-20T09:06:00+08:00",
+      "top10": [
+        {
+          "rank": 1,
+          "full_name": "codecrafters-io/build-your-own-x",
+          "stars": 554603
+        },
+        {
+          "rank": 2,
+          "full_name": "sindresorhus/awesome",
+          "stars": 521491
+        },
+        {
+          "rank": 3,
+          "full_name": "public-apis/public-apis",
+          "stars": 490523
+        },
+        {
+          "rank": 4,
+          "full_name": "freeCodeCamp/freeCodeCamp",
+          "stars": 457531
+        },
+        {
+          "rank": 5,
+          "full_name": "EbookFoundation/free-programming-books",
+          "stars": 399605
+        },
+        {
+          "rank": 6,
+          "full_name": "openclaw/openclaw",
+          "stars": 392647
+        },
+        {
+          "rank": 7,
+          "full_name": "donnemartin/system-design-primer",
+          "stars": 374807
+        },
+        {
+          "rank": 8,
+          "full_name": "nilbuild/developer-roadmap",
+          "stars": 369909
+        },
+        {
+          "rank": 9,
+          "full_name": "jwasham/coding-interview-university",
+          "stars": 363092
+        },
+        {
+          "rank": 10,
+          "full_name": "morluto/rea",
+          "stars": 336945
+        }
+      ],
+      "grade_counts": {
+        "C": 57,
+        "A": 10,
+        "B": 26,
+        "D": 7
+      },
+      "new_entries": 0
     }
   ]
 }
